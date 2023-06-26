@@ -5,7 +5,7 @@ $font-header: 'Sofia Sans', sans-serif;
 $font-splash-welcome: 'Inria Serif', serif;
 $color-main: #ffd526;
 $color-background: #e4e4de;
-$color-text: #3f4343;
+$color-text: #747874;
 
 
 /* GLOBAL */
@@ -21,6 +21,34 @@ body {
     font-family: $font-text;
     color: $color-text;
 }
+
+.section-title {
+    color: black;
+    font-size: 33px;
+    text-align: center;
+    font-family: $font-header;
+    font-weight: bold;
+    padding-top: 28px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.section-subtitle {
+    color: $color-text;
+    font-family: $font-text;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.p {
+    font-size: 16px;
+    font-family:$font-text;
+    color: $color-text;
+    text-align: center;
+} 
 
 /* HOME */
 
@@ -49,7 +77,6 @@ body {
     font-size: 30px;
     font-family: $font-brand;
     text-decoration: none;
-    
 }
 
 .nav-menu {
@@ -66,7 +93,7 @@ body {
     padding: 0 20px;
     font-weight: bold;
     
-}  
+}
 
 .splash { 
     margin: auto;
@@ -108,4 +135,34 @@ body {
     border-width: 2px;
     border-style: solid;
     border-color: $color-main;
+} 
+
+/* SERVICE */
+
+.box-services .icon {
+    color: $color-main;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    margin: 25px auto;
+    border: $color-main solid 2px;
+    border-radius: 50%;
+}
+
+.box-services h4 {
+    color: black;
+    font-family: $font-header;
+    font-size: 16px;
+    text-align: center;   
+    padding-top: px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}    
+
+.box-services p {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 0px;
+    margin-top: 0px;
 } 
