@@ -4,7 +4,7 @@ $font-text: 'PT Serif', serif;
 $font-header: 'Sofia Sans', sans-serif;
 $font-splash-welcome: 'Inria Serif', serif;
 $color-main: #ffd526;
-$color-background: #e4e4de;
+$color-background: #f9f9f9;
 $color-text: #747874;
 
 
@@ -155,9 +155,9 @@ body {
     font-family: $font-header;
     font-size: 16px;
     text-align: center;   
-    padding-top: px;
+    padding-top: 0px;
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }    
 
 .box-services p {
@@ -166,3 +166,55 @@ body {
     padding-top: 0px;
     margin-top: 0px;
 } 
+
+/* PORTFOLIO */
+
+.portfolio {
+    background: $color-background;
+}   
+
+.card {
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-image {
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 300px;
+}
+
+.card-image img {
+    object-fit: cover;
+    max-width: 100%;
+}    
+
+.card-caption {
+    background-color: white;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+}
+
+.card-caption h4 {
+    color: black;
+    font-family: $font-header;
+    font-size: 18px;
+    text-align: center;   
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.card-caption p {
+    color: $color-text;
+    font-family: $font-text;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
