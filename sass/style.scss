@@ -60,7 +60,6 @@ body {
     min-height: 560px;
     display: flex;
     font-family: $font-header;
-    
 }
 
 .navigation {
@@ -69,7 +68,7 @@ body {
 }
 
 .navigation .row {
-     display: block;
+     display: inline-block;
 }
 
 .navbar-brand a {
@@ -84,16 +83,20 @@ body {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    margin-left: 240px;    
+    margin-left: 240px;
+    margin-bottom: 100px;    
 }
 
 .nav-menu a {
     color: white;
     text-decoration: none;
     font-size: 14px;
-    padding: 0 20px;
+    padding: 0 10px;
     font-weight: bold;
-    
+}
+
+.nav-menu a:hover {
+    color: $color-main;
 }
 
 .splash { 
@@ -137,6 +140,12 @@ body {
     border-style: solid;
     border-color: $color-main;
 } 
+
+.btn:hover {
+    color: $color-main;
+    border-color: $color-main;
+    background-color: white;
+}
 
 /* SERVICE */
 
@@ -239,7 +248,8 @@ body {
     font-family: $font-header;
     color: black;
     font-size: 13px;
-    text-align: center;
+    text-align: left;
+    padding-left: 0;
 }  
 
 /* MEDIA */
