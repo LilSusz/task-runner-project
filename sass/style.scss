@@ -1,7 +1,111 @@
+/* VARIABLES */
 $font-brand: 'Carattere', cursive;
 $font-text: 'PT Serif', serif;
 $font-header: 'Sofia Sans', sans-serif;
 $font-splash-welcome: 'Inria Serif', serif;
-$color-main: #ffde2f;
+$color-main: #ffd526;
 $color-background: #e4e4de;
 $color-text: #3f4343;
+
+
+/* GLOBAL */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+    color: $color-text;
+}
+
+/* HOME */
+
+.home {
+    background-image: url(../images/img_splash.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 560px;
+    display: flex;
+    font-family: $font-header;
+}
+
+.navigation {
+    position: fixed;
+    width: 100%;
+}
+
+.navigation .row {
+     display: block;
+}
+
+.navbar-brand a {
+    color: $color-main;
+    font-style: italic;
+    font-size: 30px;
+    font-family: $font-brand;
+    text-decoration: none;
+    
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 240px;    
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: bold;
+    
+}  
+
+.splash { 
+    margin: auto;
+    text-align: center;
+    padding-top: 56px;
+    max-width: 70%;
+}   
+
+.page-title {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    font-family: $font-splash-welcome;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+
+.page-subtitle {
+    color: white;
+    font-size: 62px;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}  
+
+.btn {
+    display: inline-block;
+    min-width: 190px;
+    min-height: 50px;
+    padding-top: 10px;
+    border-radius: 3px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-main;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $color-main;
+} 
