@@ -60,6 +60,7 @@ body {
     min-height: 560px;
     display: flex;
     font-family: $font-header;
+    
 }
 
 .navigation {
@@ -217,4 +218,43 @@ body {
     padding-bottom: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+/* FOOTER */
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    color: black;
+}
+
+.footer-menu li i {
+    margin: 15px;
+    color: black;
+    font-size: 30px;
+}
+
+.copyrights {
+    font-family: $font-header;
+    color: black;
+    font-size: 13px;
+    text-align: center;
+}  
+
+/* MEDIA */
+
+@media (max-width: 768px) {
+    .navbar-brand a {
+        padding-left: 50%;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
 }
