@@ -54,6 +54,8 @@ body {
 
 .home {
     background-image: url(../images/img_splash.jpg);
+    background-color: #0006; 
+    background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -69,6 +71,7 @@ body {
 
 .navigation .row {
      display: inline-block;
+
 }
 
 .navbar-brand a {
@@ -84,7 +87,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin-left: 240px;
-    margin-bottom: 100px;    
+    margin-bottom: 100px;  
 }
 
 .nav-menu a {
@@ -248,7 +251,7 @@ body {
     font-family: $font-header;
     color: black;
     font-size: 13px;
-    text-align: left;
+    text-align: center;
     padding-left: 0;
 }  
 
